@@ -31,16 +31,16 @@ This challenge is intended to be completed within ~3 hours, so keep solutions mi
 - **Endpoints**:
   - `POST /auth/register` – Create a new user
   - `POST /auth/login` – Login user, return a token (e.g., JWT)
-- **Secure the Tasks Routes**: Only authenticated users can perform task operations.  
+- **Secure the Tasks Routes**: Only authenticated users can perform task operations.
   - **Password Hashing**: Use `bcrypt` or another hashing library to store passwords securely.
   - **Token Verification**: Verify the token (JWT) on each request to protected routes.
 
 ### 2. Backend (Node.js or Nest.js)
 
-- **Tasks CRUD**:  
-  - `GET /tasks` – Retrieve a list of tasks (optionally filtered by user).  
-  - `POST /tasks` – Create a new task.  
-  - `PUT /tasks/:id` – Update a task (e.g., mark as complete, edit text).  
+- **Tasks CRUD**:
+  - `GET /tasks` – Retrieve a list of tasks (optionally filtered by user).
+  - `POST /tasks` – Create a new task.
+  - `PUT /tasks/:id` – Update a task (e.g., mark as complete, edit text).
   - `DELETE /tasks/:id` – Delete a task.
 - **Task Model**:
   - `id`: Primary key
@@ -99,20 +99,23 @@ This challenge is intended to be completed within ~3 hours, so keep solutions mi
 
 ## Evaluation Criteria
 
-1. **Functionality**  
+1. **Functionality**
+
    - Does registration and login work correctly (with password hashing)?
    - Are tasks protected by authentication?
    - Does the tasks CRUD flow work end-to-end?
 
-2. **Code Quality**  
+2. **Code Quality**
+
    - Is the code structured logically and typed in TypeScript?
    - Are variable/function names descriptive?
 
-3. **Clarity**  
+3. **Clarity**
+
    - Is the `README.md` (in your fork) clear and detailed about setup steps?
    - Easy to run and test?
 
-4. **Maintainability**  
+4. **Maintainability**
    - Organized logic (controllers/services, etc.)
    - Minimal hard-coded values
 
